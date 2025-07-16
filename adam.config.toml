@@ -1,0 +1,157 @@
+# Adam Browser Configuration File
+# This file controls all aspects of the Adam Browser AI Agent
+
+[general]
+app_name = "Adam Browser"
+version = "1.0.0"
+debug_mode = false
+log_level = "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+offline_mode = false
+telemetry_enabled = false
+
+[browser]
+# Browser Configuration
+default_browser = "chromium"  # chromium, firefox, webkit
+browser_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+headless = false
+devtools = false
+slow_mo = 0  # Milliseconds to slow down operations
+timeout = 30000  # Default timeout in milliseconds
+viewport_width = 1920
+viewport_height = 1080
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Adam/1.0"
+
+[browser.downloads]
+download_path = "./downloads"
+auto_download = true
+wait_for_download = true
+
+[ai]
+# AI/NLP Configuration
+model_path = "./bert-base-uncased-mrpc/bert-base-uncased-mrpc"
+use_local_model = true
+fallback_to_api = false
+confidence_threshold = 0.7
+max_tokens = 512
+
+[ai.api]
+# API Configuration (fallback)
+openai_api_key = ""
+anthropic_api_key = ""
+google_api_key = ""
+ollama_endpoint = "http://localhost:11434"
+
+[database]
+# SQLite Database Configuration
+db_path = "./adam.browser.database/adam.db"
+log_db_path = "./adam.browser.database/logs.db"
+backup_enabled = true
+backup_interval = 3600  # seconds
+max_log_entries = 100000
+
+[security]
+# Security & Encryption
+encrypt_credentials = true
+vault_path = "./adam.browser.database/vault.enc"
+session_timeout = 3600  # seconds
+auto_lock = true
+master_password_required = true
+
+[gui]
+# GUI Configuration
+theme = "default"  # default, dark, light
+window_width = 1200
+window_height = 800
+minimize_to_tray = true
+show_splash = true
+auto_start = false
+
+[gui.logging]
+max_log_lines = 1000
+auto_scroll = true
+show_timestamps = true
+color_coding = true
+
+[automation]
+# Automation Behavior
+scroll_speed = 500  # pixels per scroll
+click_delay = 100  # milliseconds
+type_delay = 50  # milliseconds between keystrokes
+screenshot_interval = 10  # seconds (0 to disable)
+screenshot_path = "./screenshots"
+
+[automation.selectors]
+# Selector Strategies (priority order)
+strategies = ["id", "name", "aria-label", "placeholder", "text", "css", "xpath"]
+fuzzy_matching = true
+similarity_threshold = 0.8
+
+[expedia]
+# Expedia-specific Configuration
+base_url = "https://www.expedia.com"
+default_currency = "USD"
+default_language = "en-US"
+auto_accept_cookies = true
+
+[expedia.preferences]
+flight_class = "economy"  # economy, premium_economy, business, first
+hotel_stars = 3  # minimum stars
+car_type = "compact"  # compact, sedan, suv, luxury
+
+[google_maps]
+# Google Maps Configuration
+base_url = "https://maps.google.com"
+default_travel_mode = "driving"  # driving, walking, transit, bicycling
+avoid_tolls = false
+avoid_highways = false
+
+[logging]
+# Logging Configuration
+log_to_file = true
+log_file_path = "./logs/adam.log"
+log_rotation = "daily"
+log_retention = 30  # days
+log_format = "{time:YYYY-MM-DD HH:mm:ss} | {level} | {module} | {message}"
+
+[logging.modules]
+# Per-module log levels
+browser = "INFO"
+agent = "DEBUG"
+navigator = "INFO"
+gui = "WARNING"
+database = "INFO"
+security = "WARNING"
+
+[performance]
+# Performance & Monitoring
+enable_metrics = true
+metrics_interval = 60  # seconds
+memory_limit = 2048  # MB
+cpu_limit = 80  # percentage
+benchmark_mode = false
+
+[plugins]
+# Plugin System
+enabled = true
+plugin_dir = "./plugins"
+auto_load = true
+sandbox_plugins = true
+
+[installer]
+# Windows Installer Configuration
+create_desktop_shortcut = true
+create_start_menu = true
+add_to_path = false
+auto_update = true
+update_channel = "stable"  # stable, beta, dev
+
+[network]
+# Network Configuration
+proxy_enabled = false
+proxy_host = ""
+proxy_port = 8080
+proxy_auth = false
+proxy_username = ""
+proxy_password = ""
+user_agent_rotation = false
+request_delay = 0  # milliseconds between requests
