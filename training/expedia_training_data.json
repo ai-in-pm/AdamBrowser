@@ -1,0 +1,291 @@
+{
+  "version": "1.0",
+  "last_updated": "2024-01-15",
+  "description": "Comprehensive training data for Expedia.com AI agent interactions",
+  
+  "common_destinations": [
+    "New York, NY (JFK)",
+    "Los Angeles, CA (LAX)",
+    "Chicago, IL (ORD)",
+    "Miami, FL (MIA)",
+    "Las Vegas, NV (LAS)",
+    "San Francisco, CA (SFO)",
+    "Orlando, FL (MCO)",
+    "Boston, MA (BOS)",
+    "Seattle, WA (SEA)",
+    "Denver, CO (DEN)",
+    "Atlanta, GA (ATL)",
+    "Phoenix, AZ (PHX)",
+    "Dallas, TX (DFW)",
+    "Houston, TX (IAH)",
+    "Philadelphia, PA (PHL)",
+    "Detroit, MI (DTW)",
+    "Minneapolis, MN (MSP)",
+    "Charlotte, NC (CLT)",
+    "Tampa, FL (TPA)",
+    "Portland, OR (PDX)"
+  ],
+  
+  "international_destinations": [
+    "London, UK (LHR)",
+    "Paris, France (CDG)",
+    "Tokyo, Japan (NRT)",
+    "Rome, Italy (FCO)",
+    "Barcelona, Spain (BCN)",
+    "Amsterdam, Netherlands (AMS)",
+    "Frankfurt, Germany (FRA)",
+    "Sydney, Australia (SYD)",
+    "Toronto, Canada (YYZ)",
+    "Mexico City, Mexico (MEX)"
+  ],
+  
+  "booking_patterns": {
+    "flight": {
+      "required_fields": ["origin", "destination", "departure_date"],
+      "optional_fields": ["return_date", "travelers", "class"],
+      "field_order": ["origin", "destination", "departure_date", "return_date", "travelers", "class"],
+      "common_classes": ["Economy", "Premium Economy", "Business", "First"],
+      "traveler_options": [1, 2, 3, 4, 5, 6]
+    },
+    "hotel": {
+      "required_fields": ["destination", "checkin_date", "checkout_date"],
+      "optional_fields": ["guests", "rooms"],
+      "field_order": ["destination", "checkin_date", "checkout_date", "guests", "rooms"],
+      "guest_options": [1, 2, 3, 4, 5, 6],
+      "room_options": [1, 2, 3, 4]
+    },
+    "car": {
+      "required_fields": ["pickup_location", "pickup_date", "dropoff_date"],
+      "optional_fields": ["dropoff_location", "driver_age"],
+      "field_order": ["pickup_location", "dropoff_location", "pickup_date", "dropoff_date", "driver_age"],
+      "age_options": ["25-29", "30-64", "65+"]
+    },
+    "package": {
+      "required_fields": ["origin", "destination", "departure_date", "return_date"],
+      "optional_fields": ["travelers", "rooms"],
+      "field_order": ["origin", "destination", "departure_date", "return_date", "travelers", "rooms"]
+    }
+  },
+  
+  "element_selectors": {
+    "search_forms": {
+      "flight": [
+        "[data-testid='flight-search-form']",
+        ".flight-search-form",
+        "#flight-search",
+        "form[action*='flight']"
+      ],
+      "hotel": [
+        "[data-testid='hotel-search-form']",
+        ".hotel-search-form",
+        "#hotel-search",
+        "form[action*='hotel']"
+      ],
+      "car": [
+        "[data-testid='car-search-form']",
+        ".car-search-form",
+        "#car-search",
+        "form[action*='car']"
+      ]
+    },
+    "location_inputs": [
+      "[data-testid='origin-input']",
+      "[data-testid='destination-input']",
+      "[placeholder*='From' i]",
+      "[placeholder*='To' i]",
+      "[placeholder*='Where' i]",
+      "input[name*='origin']",
+      "input[name*='destination']"
+    ],
+    "date_inputs": [
+      "[data-testid*='date']",
+      ".date-picker-input",
+      "input[type='date']",
+      "[placeholder*='date' i]"
+    ],
+    "search_buttons": [
+      "[data-testid='search-button']",
+      "button[type='submit']",
+      ".search-btn",
+      ".search-button"
+    ]
+  },
+  
+  "interaction_patterns": {
+    "typing_speed": {
+      "min_delay": 0.05,
+      "max_delay": 0.15,
+      "word_pause": 0.3
+    },
+    "mouse_movement": {
+      "natural_curve": true,
+      "random_offset": 5,
+      "hover_time": 0.2
+    },
+    "form_filling": {
+      "field_delay": 0.5,
+      "validation_wait": 1.0,
+      "autocomplete_wait": 1.5
+    }
+  },
+  
+  "test_scenarios": [
+    {
+      "name": "Basic Flight Search",
+      "type": "flight",
+      "data": {
+        "origin": "New York, NY",
+        "destination": "Los Angeles, CA",
+        "departure_date": "03/15/2024",
+        "return_date": "03/22/2024",
+        "travelers": 1,
+        "class": "Economy"
+      },
+      "expected_results": "flight search results page"
+    },
+    {
+      "name": "Hotel Search",
+      "type": "hotel",
+      "data": {
+        "destination": "Las Vegas, NV",
+        "checkin_date": "04/10/2024",
+        "checkout_date": "04/13/2024",
+        "guests": 2,
+        "rooms": 1
+      },
+      "expected_results": "hotel search results page"
+    },
+    {
+      "name": "Car Rental Search",
+      "type": "car",
+      "data": {
+        "pickup_location": "Miami, FL",
+        "dropoff_location": "Miami, FL",
+        "pickup_date": "05/20/2024",
+        "dropoff_date": "05/25/2024",
+        "driver_age": "30-64"
+      },
+      "expected_results": "car rental results page"
+    },
+    {
+      "name": "International Flight",
+      "type": "flight",
+      "data": {
+        "origin": "New York, NY",
+        "destination": "London, UK",
+        "departure_date": "06/01/2024",
+        "return_date": "06/15/2024",
+        "travelers": 2,
+        "class": "Business"
+      },
+      "expected_results": "international flight results"
+    }
+  ],
+  
+  "error_patterns": {
+    "validation_errors": [
+      "Please enter a valid destination",
+      "Please select a departure date",
+      "Please select a return date",
+      "Invalid date selection",
+      "Departure date cannot be in the past",
+      "Return date must be after departure date",
+      "Please select number of travelers"
+    ],
+    "availability_errors": [
+      "No flights found for your search",
+      "No hotels available for selected dates",
+      "No cars available at this location",
+      "Limited availability for selected dates",
+      "Price has changed since your search"
+    ],
+    "technical_errors": [
+      "Unable to complete search",
+      "Please try again later",
+      "Service temporarily unavailable",
+      "Session expired",
+      "Connection timeout"
+    ]
+  },
+  
+  "success_indicators": [
+    "search results",
+    "results found",
+    "flights found",
+    "hotels found",
+    "cars available",
+    "showing results",
+    "sort by",
+    "filter by"
+  ],
+  
+  "page_load_indicators": [
+    ".loading",
+    ".spinner",
+    ".skeleton",
+    "[data-testid*='loading']",
+    ".search-progress"
+  ],
+  
+  "dynamic_content": {
+    "autocomplete_delay": 1.0,
+    "search_delay": 3.0,
+    "results_load_delay": 5.0,
+    "max_wait_time": 30.0
+  },
+  
+  "discovered_forms": [],
+  
+  "learning_metrics": {
+    "successful_searches": 0,
+    "failed_searches": 0,
+    "form_completion_rate": 0.0,
+    "average_search_time": 0.0,
+    "common_failure_points": []
+  },
+  
+  "ui_variations": {
+    "mobile_selectors": {
+      "search_button": [
+        ".mobile-search-btn",
+        "[data-testid='mobile-search']"
+      ],
+      "menu_toggle": [
+        ".hamburger-menu",
+        ".mobile-menu-toggle"
+      ]
+    },
+    "desktop_selectors": {
+      "advanced_search": [
+        ".advanced-search-toggle",
+        "[data-testid='advanced-search']"
+      ]
+    }
+  },
+  
+  "seasonal_patterns": {
+    "peak_seasons": {
+      "summer": ["06", "07", "08"],
+      "winter_holidays": ["12", "01"],
+      "spring_break": ["03", "04"]
+    },
+    "pricing_indicators": [
+      ".price-alert",
+      ".deal-badge",
+      ".discount-tag"
+    ]
+  },
+  
+  "accessibility_features": {
+    "aria_labels": [
+      "aria-label",
+      "aria-describedby",
+      "aria-expanded"
+    ],
+    "keyboard_navigation": {
+      "tab_order": true,
+      "enter_submit": true,
+      "escape_close": true
+    }
+  }
+}

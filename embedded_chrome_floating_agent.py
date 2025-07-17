@@ -252,7 +252,7 @@ class EmbeddedChromeFloatingRobotIcon(wx.Frame):
     
     def on_chrome_info(self, event):
         """Show embedded Chrome information"""
-        chrome_path = Path(__file__).parent / "Google" / "Chrome" / "Application" / "chrome.exe"
+        chrome_path = Path(r"D:\science_projects\adam_browser\Google\Chrome\Application\chrome.exe")
         
         if chrome_path.exists():
             info_msg = f"✅ Embedded Chrome Browser Found\n\nPath: {chrome_path}\nStatus: Ready for automation\nIntegration: Active"
@@ -397,7 +397,7 @@ class EmbeddedChromeChatWindow(wx.Frame):
         chrome_panel.SetBackgroundColour(wx.Colour(240, 248, 255))  # Light blue
         chrome_sizer = wx.BoxSizer(wx.HORIZONTAL)
         
-        chrome_path = Path(__file__).parent / "Google" / "Chrome" / "Application" / "chrome.exe"
+        chrome_path = Path(r"D:\science_projects\adam_browser\Google\Chrome\Application\chrome.exe")
         if chrome_path.exists():
             chrome_status = "✅ Embedded Chrome Ready"
             chrome_color = wx.Colour(0, 128, 0)  # Green
@@ -463,7 +463,7 @@ class EmbeddedChromeChatWindow(wx.Frame):
     
     def add_welcome_message(self):
         """Add welcome message to chat"""
-        chrome_path = Path(__file__).parent / "Google" / "Chrome" / "Application" / "chrome.exe"
+        chrome_path = Path(r"D:\science_projects\adam_browser\Google\Chrome\Application\chrome.exe")
         chrome_status = "✅ Ready" if chrome_path.exists() else "❌ Not Found"
         
         welcome_msg = f"""✅ Embedded Chrome Ready
@@ -831,7 +831,7 @@ Browser staying open for all commands! 🚀"""
             from playwright.async_api import async_playwright
 
             # Check Chrome path
-            chrome_path = Path(__file__).parent / "Google" / "Chrome" / "Application" / "chrome.exe"
+            chrome_path = Path(r"D:\science_projects\adam_browser\Google\Chrome\Application\chrome.exe")
 
             if not chrome_path.exists():
                 print(f"❌ Chrome not found: {chrome_path}")
@@ -2309,7 +2309,7 @@ class EmbeddedChromeFloatingApp(wx.App):
         print("🚀 Initializing Enhanced Adam Browser with Embedded Chrome...")
 
         # Check Chrome availability
-        chrome_path = Path(__file__).parent / "Google" / "Chrome" / "Application" / "chrome.exe"
+        chrome_path = Path(r"D:\science_projects\adam_browser\Google\Chrome\Application\chrome.exe")
         if chrome_path.exists():
             print(f"✅ Embedded Chrome found: {chrome_path}")
         else:
@@ -2331,7 +2331,7 @@ def main():
     print("=" * 70)
     print("🌐 EMBEDDED CHROME INTEGRATION:")
 
-    chrome_path = Path(__file__).parent / "Google" / "Chrome" / "Application" / "chrome.exe"
+    chrome_path = Path(r"D:\science_projects\adam_browser\Google\Chrome\Application\chrome.exe")
     if chrome_path.exists():
         print(f"✅ Chrome Path: {chrome_path}")
         print("✅ Status: Ready for automation")

@@ -1,0 +1,689 @@
+{
+  "url": "https://www.youtube.com/",
+  "url_context": "https://www.youtube.com/",
+  "title": "YouTube",
+  "page_type": "PageType.HOMEPAGE",
+  "training_type": "Social Media",
+  "domain_info": {
+    "domain": "www.youtube.com",
+    "main_domain": "youtube.com",
+    "subdomain": "www",
+    "domain_type": "Commercial",
+    "tld": "com"
+  },
+  "elements": {
+    "forms": {
+      "count": 1,
+      "analyzed_samples": 1,
+      "elements": [
+        {
+          "tag_name": "form",
+          "text_content": "",
+          "attributes": {
+            "class": "ytSearchboxComponentSearchForm",
+            "action": "/results"
+          },
+          "position": {
+            "x": 651.2000122070312,
+            "y": 16,
+            "width": 515.2000122070312,
+            "height": 24
+          },
+          "is_visible": true,
+          "accessibility_score": 0.0,
+          "interaction_methods": [],
+          "context": "parent: div, parent_class: ytSearchboxComponentInputBox, position: 0/1",
+          "category": "forms"
+        }
+      ],
+      "patterns": {
+        "common_classes": {
+          "ytSearchboxComponentSearchForm": 1
+        },
+        "common_attributes": {
+          "class": {
+            "ytSearchboxComponentSearchForm": 1
+          },
+          "action": {
+            "/results": 1
+          }
+        },
+        "text_patterns": [],
+        "interaction_patterns": {}
+      }
+    },
+    "buttons": {
+      "count": 62,
+      "analyzed_samples": 14,
+      "elements": [
+        {
+          "tag_name": "button",
+          "text_content": "",
+          "attributes": {
+            "id": "button",
+            "class": "style-scope yt-icon-button"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.1,
+          "interaction_methods": [
+            "click",
+            "hover"
+          ],
+          "context": "parent: yt-icon-button, parent_class: style-scope ytd-miniplayer, position: 0/2",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "button",
+          "text_content": "",
+          "attributes": {
+            "id": "button",
+            "class": "style-scope yt-icon-button",
+            "aria-label": "Expand"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.4,
+          "interaction_methods": [
+            "click",
+            "hover"
+          ],
+          "context": "parent: yt-icon-button, parent_class: style-scope ytd-miniplayer, position: 0/2",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "button",
+          "text_content": "",
+          "attributes": {
+            "id": "button",
+            "class": "style-scope yt-icon-button",
+            "aria-label": "Collapse"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.4,
+          "interaction_methods": [
+            "click",
+            "hover"
+          ],
+          "context": "parent: yt-icon-button, parent_class: style-scope ytd-playlist-panel-renderer, position: 0/2",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "button",
+          "text_content": "",
+          "attributes": {
+            "id": "button",
+            "class": "style-scope yt-icon-button",
+            "aria-label": "Back"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.4,
+          "interaction_methods": [
+            "click",
+            "hover"
+          ],
+          "context": "parent: yt-icon-button, parent_class: style-scope ytd-masthead, position: 0/2",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "button",
+          "text_content": "",
+          "attributes": {
+            "id": "button",
+            "class": "style-scope yt-icon-button",
+            "aria-label": "Guide"
+          },
+          "position": {
+            "x": 24,
+            "y": 16,
+            "width": 24,
+            "height": 24
+          },
+          "is_visible": true,
+          "accessibility_score": 0.4,
+          "interaction_methods": [
+            "click",
+            "hover"
+          ],
+          "context": "parent: yt-icon-button, parent_class: style-scope ytd-masthead, position: 0/2",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "div",
+          "text_content": "",
+          "attributes": {
+            "class": "ytp-fine-scrubbing-play",
+            "aria-label": "Play from this position",
+            "title": "Play from this position",
+            "role": "button"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.7,
+          "interaction_methods": [],
+          "context": "parent: div, parent_class: ytp-fine-scrubbing, position: 3/5",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "div",
+          "text_content": "",
+          "attributes": {
+            "class": "ytp-fine-scrubbing-dismiss",
+            "aria-label": "Exit precise seeking",
+            "title": "Exit precise seeking",
+            "role": "button"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.7,
+          "interaction_methods": [],
+          "context": "parent: div, parent_class: ytp-fine-scrubbing, position: 4/5",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "a",
+          "text_content": "",
+          "attributes": {
+            "class": "ytp-prev-button ytp-button",
+            "role": "button"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.2,
+          "interaction_methods": [
+            "click"
+          ],
+          "context": "parent: div, parent_class: ytp-left-controls, position: 0/7",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "a",
+          "text_content": "",
+          "attributes": {
+            "class": "ytp-next-button ytp-button",
+            "aria-label": "Next (SHIFT+n)",
+            "title": "Next (SHIFT+n)",
+            "role": "button"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.7,
+          "interaction_methods": [
+            "click",
+            "hover"
+          ],
+          "context": "parent: div, parent_class: ytp-left-controls, position: 2/7",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "tp-yt-paper-button",
+          "text_content": "",
+          "attributes": {
+            "id": "collapse-button",
+            "class": "button style-scope ytd-watch-metadata",
+            "role": "button"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.30000000000000004,
+          "interaction_methods": [
+            "hover"
+          ],
+          "context": "parent: div, parent_class: style-scope ytd-watch-metadata, position: 4/5",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "tp-yt-paper-button",
+          "text_content": "",
+          "attributes": {
+            "id": "collapse-button",
+            "class": "button style-scope ytd-watch-metadata",
+            "role": "button"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.30000000000000004,
+          "interaction_methods": [
+            "hover"
+          ],
+          "context": "parent: div, parent_class: style-scope ytd-watch-metadata, position: 4/5",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "tp-yt-paper-button",
+          "text_content": "",
+          "attributes": {
+            "id": "expand-sizer",
+            "class": "button style-scope ytd-text-inline-expander",
+            "role": "button"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.30000000000000004,
+          "interaction_methods": [
+            "hover"
+          ],
+          "context": "parent: div, parent_class: style-scope ytd-text-inline-expander, position: 3/4",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "tp-yt-paper-button",
+          "text_content": "",
+          "attributes": {
+            "id": "expand",
+            "class": "button style-scope ytd-text-inline-expander",
+            "role": "button"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.30000000000000004,
+          "interaction_methods": [
+            "hover"
+          ],
+          "context": "parent: ytd-text-inline-expander, parent_class: style-scope ytd-watch-metadata, position: 2/5",
+          "category": "buttons"
+        },
+        {
+          "tag_name": "tp-yt-paper-button",
+          "text_content": "",
+          "attributes": {
+            "id": "collapse",
+            "class": "button style-scope ytd-text-inline-expander",
+            "role": "button"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.30000000000000004,
+          "interaction_methods": [
+            "hover"
+          ],
+          "context": "parent: ytd-text-inline-expander, parent_class: style-scope ytd-watch-metadata, position: 4/5",
+          "category": "buttons"
+        }
+      ],
+      "patterns": {
+        "common_classes": {
+          "style-scope": 10,
+          "yt-icon-button": 5,
+          "ytp-fine-scrubbing-play": 1,
+          "ytp-fine-scrubbing-dismiss": 1,
+          "ytp-prev-button": 1,
+          "ytp-button": 2,
+          "ytp-next-button": 1,
+          "button": 5,
+          "ytd-watch-metadata": 2,
+          "ytd-text-inline-expander": 3
+        },
+        "common_attributes": {
+          "id": {
+            "button": 5,
+            "collapse-button": 2,
+            "expand-sizer": 1,
+            "expand": 1,
+            "collapse": 1
+          },
+          "class": {
+            "style-scope yt-icon-button": 5,
+            "ytp-fine-scrubbing-play": 1,
+            "ytp-fine-scrubbing-dismiss": 1,
+            "ytp-prev-button ytp-button": 1,
+            "ytp-next-button ytp-button": 1,
+            "button style-scope ytd-watch-metadata": 2,
+            "button style-scope ytd-text-inline-expander": 3
+          },
+          "aria-label": {
+            "Expand": 1,
+            "Collapse": 1,
+            "Back": 1,
+            "Guide": 1,
+            "Play from this position": 1,
+            "Exit precise seeking": 1,
+            "Next (SHIFT+n)": 1
+          },
+          "title": {
+            "Play from this position": 1,
+            "Exit precise seeking": 1,
+            "Next (SHIFT+n)": 1
+          },
+          "role": {
+            "button": 9
+          }
+        },
+        "text_patterns": [],
+        "interaction_patterns": {
+          "click": 7,
+          "hover": 11
+        }
+      }
+    },
+    "inputs": {
+      "count": 1,
+      "analyzed_samples": 1,
+      "elements": [
+        {
+          "tag_name": "input",
+          "text_content": "",
+          "attributes": {
+            "class": "ytSearchboxComponentInput yt-searchbox-input title",
+            "name": "search_query",
+            "type": "text",
+            "placeholder": "Search",
+            "role": "combobox"
+          },
+          "position": {
+            "x": 651.2000122070312,
+            "y": 16,
+            "width": 515.2000122070312,
+            "height": 24
+          },
+          "is_visible": true,
+          "accessibility_score": 0.2,
+          "interaction_methods": [
+            "click",
+            "type",
+            "clear"
+          ],
+          "context": "parent: form, parent_class: ytSearchboxComponentSearchForm, position: 0/1",
+          "category": "inputs"
+        }
+      ],
+      "patterns": {
+        "common_classes": {
+          "ytSearchboxComponentInput": 1,
+          "yt-searchbox-input": 1,
+          "title": 1
+        },
+        "common_attributes": {
+          "class": {
+            "ytSearchboxComponentInput yt-searchbox-input title": 1
+          },
+          "name": {
+            "search_query": 1
+          },
+          "type": {
+            "text": 1
+          },
+          "placeholder": {
+            "Search": 1
+          },
+          "role": {
+            "combobox": 1
+          }
+        },
+        "text_patterns": [],
+        "interaction_patterns": {
+          "click": 1,
+          "type": 1,
+          "clear": 1
+        }
+      }
+    },
+    "navigation": {
+      "count": 2,
+      "analyzed_samples": 2,
+      "elements": [
+        {
+          "tag_name": "tp-yt-app-drawer",
+          "text_content": "Home\n    \n    \n      \n    \n    \n    \n  \n\n\n\n\n  \n    \n    \n    Shorts\n    \n    \n      \n    \n    \n    \n",
+          "attributes": {
+            "id": "guide",
+            "class": "style-scope ytd-app",
+            "role": "navigation"
+          },
+          "position": {
+            "x": 0,
+            "y": 56,
+            "width": 240,
+            "height": 1144
+          },
+          "is_visible": true,
+          "accessibility_score": 0.5,
+          "interaction_methods": [],
+          "context": "parent: div, parent_class: style-scope ytd-app, position: 2/5",
+          "category": "navigation"
+        },
+        {
+          "tag_name": "ytd-mini-guide-renderer",
+          "text_content": "Home\n  \n  \n    Home\n  \n\n\n  \n\n\n  \n  Shorts\n  \n  \n    Shorts\n  \n\n\n  \n\n\n  \n  Subscriptions\n  \n  \n    Su",
+          "attributes": {
+            "class": "style-scope ytd-app",
+            "role": "navigation"
+          },
+          "position": {},
+          "is_visible": false,
+          "accessibility_score": 0.4,
+          "interaction_methods": [],
+          "context": "parent: div, parent_class: style-scope ytd-app, position: 3/5",
+          "category": "navigation"
+        }
+      ],
+      "patterns": {
+        "common_classes": {
+          "style-scope": 2,
+          "ytd-app": 2
+        },
+        "common_attributes": {
+          "id": {
+            "guide": 1
+          },
+          "class": {
+            "style-scope ytd-app": 2
+          },
+          "role": {
+            "navigation": 2
+          }
+        },
+        "text_patterns": [],
+        "interaction_patterns": {}
+      }
+    },
+    "content_areas": {
+      "count": 1,
+      "analyzed_samples": 1,
+      "elements": [
+        {
+          "tag_name": "ytd-browse",
+          "text_content": "Try searching to get started\n      \n      \n        Start watching videos to help us build a feed of ",
+          "attributes": {
+            "class": "style-scope ytd-page-manager",
+            "role": "main"
+          },
+          "position": {
+            "x": 240,
+            "y": 56,
+            "width": 1664.800048828125,
+            "height": 172
+          },
+          "is_visible": true,
+          "accessibility_score": 0.4,
+          "interaction_methods": [],
+          "context": "parent: ytd-page-manager, parent_class: style-scope ytd-app, position: 0/2",
+          "category": "content_areas"
+        }
+      ],
+      "patterns": {
+        "common_classes": {
+          "style-scope": 1,
+          "ytd-page-manager": 1
+        },
+        "common_attributes": {
+          "class": {
+            "style-scope ytd-page-manager": 1
+          },
+          "role": {
+            "main": 1
+          }
+        },
+        "text_patterns": [],
+        "interaction_patterns": {}
+      }
+    }
+  },
+  "forms": [
+    {
+      "index": 0,
+      "action": "/results",
+      "method": "GET",
+      "fields": [
+        {
+          "tag_name": "input",
+          "text_content": "",
+          "attributes": {
+            "class": "ytSearchboxComponentInput yt-searchbox-input title",
+            "name": "search_query",
+            "type": "text",
+            "placeholder": "Search",
+            "role": "combobox"
+          },
+          "position": {
+            "x": 651.2000122070312,
+            "y": 16,
+            "width": 515.2000122070312,
+            "height": 24
+          },
+          "is_visible": true,
+          "accessibility_score": 0.2,
+          "interaction_methods": [
+            "click",
+            "type",
+            "clear"
+          ],
+          "context": "parent: form, parent_class: ytSearchboxComponentSearchForm, position: 0/1",
+          "category": "form_field"
+        }
+      ],
+      "buttons": [],
+      "purpose": "search"
+    }
+  ],
+  "navigation": [
+    {
+      "tag_name": "tp-yt-app-drawer",
+      "text_content": "Home\n    \n    \n      \n    \n    \n    \n  \n\n\n\n\n  \n    \n    \n    Shorts\n    \n    \n      \n    \n    \n    \n",
+      "attributes": {
+        "id": "guide",
+        "class": "style-scope ytd-app",
+        "role": "navigation"
+      },
+      "position": {
+        "x": 0,
+        "y": 56,
+        "width": 240,
+        "height": 1144
+      },
+      "is_visible": true,
+      "accessibility_score": 0.5,
+      "interaction_methods": [],
+      "context": "parent: div, parent_class: style-scope ytd-app, position: 2/5",
+      "category": "navigation",
+      "links": [
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/feed/subscriptions",
+          "text": "Subscriptions"
+        },
+        {
+          "href": "/feed/you",
+          "text": "You"
+        },
+        {
+          "href": "/feed/history",
+          "text": "History"
+        },
+        {
+          "href": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=en",
+          "text": "Sign in"
+        },
+        {
+          "href": "/feed/trending?bp=6gQJRkVleHBsb3Jl",
+          "text": "Trending"
+        },
+        {
+          "href": "/channel/UCkYQyvc_i9hXEo4xic9Hh2g",
+          "text": "Shopping"
+        },
+        {
+          "href": "/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ",
+          "text": "Music"
+        }
+      ]
+    },
+    {
+      "tag_name": "ytd-mini-guide-renderer",
+      "text_content": "Home\n  \n  \n    Home\n  \n\n\n  \n\n\n  \n  Shorts\n  \n  \n    Shorts\n  \n\n\n  \n\n\n  \n  Subscriptions\n  \n  \n    Su",
+      "attributes": {
+        "class": "style-scope ytd-app",
+        "role": "navigation"
+      },
+      "position": {},
+      "is_visible": false,
+      "accessibility_score": 0.4,
+      "interaction_methods": [],
+      "context": "parent: div, parent_class: style-scope ytd-app, position: 3/5",
+      "category": "navigation",
+      "links": [
+        {
+          "href": "/",
+          "text": "Home\n  \n  \n    Home"
+        },
+        {
+          "href": "/feed/subscriptions",
+          "text": "Subscriptions\n  \n  \n    Subscriptions"
+        },
+        {
+          "href": "/feed/you",
+          "text": "You\n  \n  \n    You"
+        },
+        {
+          "href": "/feed/history",
+          "text": "History\n  \n  \n    History"
+        }
+      ]
+    }
+  ],
+  "content_structure": {
+    "headings": {
+      "h1": 3,
+      "h2": 0,
+      "h3": 9,
+      "h4": 0,
+      "h5": 0,
+      "h6": 0
+    },
+    "paragraphs": 0,
+    "images": 32,
+    "videos": 1,
+    "lists": 0,
+    "tables": 0
+  },
+  "accessibility_features": {
+    "aria_labels": 67,
+    "alt_texts": 27,
+    "skip_links": 0,
+    "landmarks": 4,
+    "focus_indicators": 0
+  },
+  "performance_metrics": {
+    "load_time": 1.4000000059604645,
+    "dom_content_loaded": 1.0999999940395355,
+    "page_size": 945776,
+    "element_count": 2699
+  },
+  "url_analysis": {
+    "scheme": "https",
+    "path": "/",
+    "path_segments": [],
+    "path_depth": 0,
+    "query_params": [],
+    "query_param_count": 0,
+    "fragment": "",
+    "url_patterns": [],
+    "is_secure": true
+  },
+  "timestamp": "2025-07-16T19:28:19.493467"
+}

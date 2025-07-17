@@ -1,0 +1,13 @@
+{
+  "auto_update": true,
+  "check_interval_hours": 24,
+  "allowed_channels": [
+    "stable"
+  ],
+  "security_updates_only": false,
+  "rollback_enabled": true,
+  "backup_versions": 3,
+  "update_window_start": 2,
+  "update_window_end": 6,
+  "require_confirmation": false
+}

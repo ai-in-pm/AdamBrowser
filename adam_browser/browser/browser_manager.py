@@ -46,14 +46,14 @@ class BrowserManager:
         # Browser configuration
         self.browser_type = config.browser.default_browser
 
-        # Use embedded Chrome browser from Google directory
-        embedded_chrome_path = Path(__file__).parent.parent.parent / "Google" / "Chrome" / "Application" / "chrome.exe"
-        if embedded_chrome_path.exists():
-            self.browser_path = str(embedded_chrome_path)
+        # Always use the specific embedded Chrome browser path
+        self.browser_path = r"D:\science_projects\adam_browser\Google\Chrome\Application\chrome.exe"
+
+        if Path(self.browser_path).exists():
             logger.info(f"Using embedded Chrome browser: {self.browser_path}")
         else:
-            self.browser_path = config.browser.browser_path
-            logger.warning(f"Embedded Chrome not found, using configured path: {self.browser_path}")
+            logger.warning(f"Embedded Chrome not found at: {self.browser_path}")
+            logger.warning("Agent will attempt to use this path anyway")
 
         self.headless = config.browser.headless
         self.viewport = {

@@ -13,7 +13,7 @@ echo Look for the robot icon in the bottom-right corner!
 echo Click the robot to open the chat interface.
 echo.
 
-python test_enhanced_floating_agent.py
+python embedded_chrome_floating_agent.py
 
 echo.
 echo Enhanced Floating Agent has stopped.

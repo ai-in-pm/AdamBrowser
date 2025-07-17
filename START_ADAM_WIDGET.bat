@@ -10,20 +10,14 @@ echo Starting Adam Browser floating widget...
 echo Look for the blue robot in bottom-right corner!
 echo.
 
-REM Try to run the widget
-python adam_floating_agent.py
+REM Try to run the primary widget (embedded Chrome)
+python embedded_chrome_floating_agent.py
 
-REM If that fails, try alternatives
+REM If that fails, try secondary widget (simple floating agent)
 if errorlevel 1 (
     echo.
-    echo First attempt failed, trying alternative...
-    python run_adam_gui.py
-)
-
-if errorlevel 1 (
-    echo.
-    echo Second attempt failed, trying simple GUI...
-    python start_adam_browser.py
+    echo Primary GUI failed, trying secondary GUI...
+    python simple_floating_agent.py
 )
 
 if errorlevel 1 (

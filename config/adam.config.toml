@@ -12,7 +12,7 @@ telemetry_enabled = false
 [browser]
 # Browser Configuration
 default_browser = "chromium"  # chromium, firefox, webkit
-browser_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+browser_path = "D:\\science_projects\\adam_browser\\Google\\Chrome\\Application\\chrome.exe"
 headless = false
 devtools = false
 slow_mo = 0  # Milliseconds to slow down operations

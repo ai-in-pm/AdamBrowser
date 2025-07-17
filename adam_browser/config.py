@@ -17,7 +17,7 @@ from loguru import logger
 class BrowserConfig:
     """Browser-specific configuration."""
     default_browser: str = "chromium"
-    browser_path: str = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    browser_path: str = r"D:\science_projects\adam_browser\Google\Chrome\Application\chrome.exe"
     headless: bool = False
     devtools: bool = False
     slow_mo: int = 0
@@ -93,7 +93,7 @@ class Config:
         Args:
             config_path: Path to configuration file. Defaults to adam.config.toml
         """
-        self.config_path = config_path or "adam.config.toml"
+        self.config_path = config_path or "config/adam.config.toml"
         self._config_data: Dict[str, Any] = {}
         
         # Configuration sections
@@ -257,7 +257,7 @@ telemetry_enabled = false
 
 [browser]
 default_browser = "chromium"
-browser_path = "C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe"
+browser_path = "D:\\\\science_projects\\\\adam_browser\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe"
 headless = false
 devtools = false
 timeout = 30000

@@ -21,7 +21,7 @@ async def test_direct_chrome_opening():
         from playwright.async_api import async_playwright
         
         # Chrome path
-        chrome_path = Path(__file__).parent / "Google" / "Chrome" / "Application" / "chrome.exe"
+        chrome_path = Path(r"D:\science_projects\adam_browser\Google\Chrome\Application\chrome.exe")
         
         if not chrome_path.exists():
             print(f"❌ Chrome not found: {chrome_path}")

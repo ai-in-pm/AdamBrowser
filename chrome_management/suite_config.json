@@ -1,0 +1,27 @@
+{
+  "package": {
+    "name": "AdamBrowser",
+    "version": "1.0.0",
+    "include_chrome": true,
+    "optimize_size": true,
+    "build_all_formats": true
+  },
+  "chrome": {
+    "channel": "stable",
+    "auto_update": true,
+    "backup_versions": 3,
+    "update_window_start": 2,
+    "update_window_end": 6
+  },
+  "optimization": {
+    "remove_debug_symbols": true,
+    "remove_dev_tools": true,
+    "compress_resources": true,
+    "aggressive_optimization": false
+  },
+  "testing": {
+    "run_on_build": true,
+    "include_performance": true,
+    "fail_on_test_failure": true
+  }
+}
