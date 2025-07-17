@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Adam Browser 🤖🌐
 
 **Autonomous AI Agent Browser Application**
