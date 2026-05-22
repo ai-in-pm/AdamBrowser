@@ -15,11 +15,12 @@ Adam Browser is a sophisticated AI-powered browser automation system that unders
 - **Context Awareness**: Maintains session context for multi-step operations
 - **Offline Capability**: Local BERT model for privacy and offline operation
 
-### 🌐 Browser Automation
-- **Playwright Integration**: Robust browser automation with Chrome, Firefox, and WebKit support
-- **Custom Chrome Support**: Use your system Chrome browser for familiar experience
-- **Multi-Context Management**: Isolated browsing sessions with independent cookies and storage
-- **Screenshot Capture**: Automated screenshot capture with configurable intervals
+Browser Automation
+    Playwright Integration: Robust browser automation with Chrome, Firefox, and WebKit support
+    Selenium Integration: Cross-browser automation support for Chrome, Firefox, Edge, and Safari using WebDriver
+    Custom Chrome Support: Use your system Chrome browser for familiar experience
+    Multi-Context Management: Isolated browsing sessions with independent cookies and storage
+    Screenshot Capture: Automated screenshot capture with configurable intervals
 
 ### ✈️ Specialized Automation
 - **Expedia Integration**: Automated flight, hotel, and car rental booking
